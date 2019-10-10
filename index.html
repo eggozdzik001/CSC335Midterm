@@ -20,12 +20,15 @@
 	      <li>Temperature: <span id="temp" class="datatarget"></span>&deg; F</li>
 	      <li>Humidity: <span id="humidity" class="datatarget"></span>%</li>
 	      <li>Source: <a href="/~phbrown/CSC335/weather.php" class="link" >weather.php</a>, using data
-		          from <span href="https://openweathermap.org" class="link" role="link">OpenWeather</span></li>
+		          from <span href="https://openweathermap.org" class="link" role="link" onclick="window.location.href = 'https://openweathermap.org'">OpenWeather</span></li>
 	    </ul>
 	  </div>
 	  <div class="formholder">
 	    <form action="" method="get">
-	      <button type="button" class="button" onclick="showWeather();">Update the weather</button>
+        <span id="temp"></span>
+        <span id="humidity"></span>
+        <button type="button" class="button" onclick="showWeather();">Update the weather</button>
+        <div id="showeweatherdiv"></div>
 	    </form>
 	  </div>
         </div>
